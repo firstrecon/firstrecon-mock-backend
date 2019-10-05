@@ -1,4 +1,4 @@
-# First Recon Mock Backend
+# First ReCon Mock Backend
 
 This is intended to be a stand-in for the eventual backend API application
 that drives the scouting app.
@@ -16,5 +16,5 @@ that drives the scouting app.
     to get everything, but at least for the moment, that's not working yet.
 
 2. Start the application
-    * `DEBUG=firstrecon* npm start`
+    * `npm start`
     * You should see a message that the application is started on port 5000.

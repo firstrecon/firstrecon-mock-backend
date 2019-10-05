@@ -25,6 +25,17 @@ describe("app", () => {
                     expect(res.get('Access-Control-Allow-Origin')).to.equal('*');
                 });
         });
+        it("should return 404 and an error message if not found", () => {
+            request(app)
+                .get('/bogus')
+                .end((err, res) => {
+                    expect(res).to.have.status(404);
+                    expect(res).to.be.json;
+                    expect(res.body.message).to.exist;
+                    expect(res.body.message).to.equal("Not Found");
+                    expect(res.get('Access-Control-Allow-Origin')).to.equal('*');
+                });
+        });
     });
 
 });

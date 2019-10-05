@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Competition.associate = function(models) {
     // associations can be defined here
-    Competition.belongsTo(models.Game);
+    Competition.belongsTo(models.Game, { foreignKey: 'year' });
   };
   return Competition;
 };

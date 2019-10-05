@@ -9,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   ScoringAction.associate = function(models) {
     // associations can be defined here
+    ScoringAction.belongsTo(models.Game, { foreignKey: 'year' });
   };
   return ScoringAction;
 };

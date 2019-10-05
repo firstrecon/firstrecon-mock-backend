@@ -52,19 +52,3 @@ describe("games route", () => {
 
 
 });
-
-// {
-//     games: [
-//         {
-//             year: 2019,
-//             name: "Deep Space"
-//         }
-//     ]
-// }
-//
-// [
-//     {
-//         year: 2019,
-//         name: "Deep Space"
-//     }
-// ]
